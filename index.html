@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weatherly</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/images/hug.jpg" type="image/x-icon">
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+    <h1 class="logo">🌤 Weatherly</h1>
+    <span class="mode-toggle" aria-label="Toggle dark mode">☀</span>
+  </header>
+
+  <main class="main">
+    <section class="joint-card">
+      <div class="time-card">
+        <p class="date">Loading date...</p>
+        <p class="clock">--:--:--</p>
+      </div>
+      <div class="divider"></div>
+      <div class="weather-card">
+        <h2 class="city">Loading...</h2>
+        <div class="temp">--°C</div>
+        <p class="description">---</p>
+        <div class="weather-icon"></div>
+      </div>
+    </section>
+
+    <form class="search-section" onsubmit="return false;">
+      <input type="text" placeholder="Search city..." />
+      <button type="submit" aria-label="Search city">🔍</button>
+    </form>
+
+    <section class="forecast"></section>
+  </main>
+
+  <script src="weather.js"></script>
+</body>
+</html>
